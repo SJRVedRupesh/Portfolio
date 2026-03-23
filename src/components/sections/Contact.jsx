@@ -31,8 +31,8 @@ export default function Contact() {
   setLoading(true);
 
   emailjs.send(
-    "service_gq5mqki",   // 🔥 FIX THIS
-    "template_grp3r4t",
+    "service_jr1cfj1",   // 🔥 FIX THIS
+    "template_2oqzt5e",
     {
       name: form.name,
       email: form.email,
