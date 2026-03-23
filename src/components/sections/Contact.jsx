@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Mail, Twitter, Send, CheckCircle, MapPin, Clock } from 'lucide-react'
 import { personal } from '@/lib/data'
@@ -19,13 +20,36 @@ export default function Contact() {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    const errs = validate()
-    if (Object.keys(errs).length) { setErrors(errs); return }
-    setErrors({})
-    setLoading(true)
-    setTimeout(() => { setLoading(false); setSent(true) }, 1600)
+  e.preventDefault();
+
+  const validationErrors = validate();
+  if (Object.keys(validationErrors).length > 0) {
+    setErrors(validationErrors);
+    return;
   }
+
+  setLoading(true);
+
+  emailjs.send(
+    "service_gq5mqki",   // 🔥 FIX THIS
+    "template_grp3r4t",
+    {
+      name: form.name,
+      email: form.email,
+      message: form.message,
+    },
+    "-HJQkfpIuViv90XMb"
+  )
+  .then(() => {
+    setLoading(false);
+    setSent(true);   // ✅ use your UI
+  })
+  .catch((error) => {
+    setLoading(false);
+    console.log(error);
+    alert("Failed to send ❌");
+  });
+};
 
   const set = (field) => (e) => {
     setForm(f => ({ ...f, [field]: e.target.value }))
