@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #f8fafc;
+    --bg-secondary: #f1f5f9;
+    --text: #0f172a;
+    --text-muted: #64748b;
+    --border: #e2e8f0;
+    --card: #ffffff;
+  }
+  .dark {
+    --bg: #080c10;
+    --bg-secondary: #0d1117;
+    --text: #e2e8f0;
+    --text-muted: #94a3b8;
+    --border: #1e2d3d;
+    --card: #0d1117;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    @apply antialiased transition-colors duration-300;
+  }
+
+  ::selection {
+    background: rgba(20,184,166,0.25);
+  }
+
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: var(--bg-secondary); }
+  ::-webkit-scrollbar-thumb { background: #14b8a6; border-radius: 99px; }
+}
+
+@layer components {
+  .section-label {
+    @apply inline-block text-xs font-mono font-medium px-3 py-1 rounded-full
+           bg-teal-500/10 text-teal-500 border border-teal-500/20 mb-3;
+  }
+
+  .section-title {
+    @apply font-display font-bold text-3xl sm:text-4xl tracking-tight;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-teal-400 to-orange-400 bg-clip-text text-transparent;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    @apply rounded-2xl transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:border-teal-500/40 hover:shadow-xl hover:shadow-teal-500/5 hover:-translate-y-0.5;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-600 text-white
+           font-display font-semibold px-5 py-2.5 rounded-xl transition-all duration-200
+           hover:shadow-lg hover:shadow-teal-500/25 active:scale-95 text-sm;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-[var(--border)]
+           hover:border-teal-500/50 text-[var(--text)] font-display font-semibold
+           px-5 py-2.5 rounded-xl transition-all duration-200 hover:bg-teal-500/5
+           active:scale-95 text-sm;
+  }
+
+  .tag {
+    @apply text-[10px] font-mono font-medium px-2 py-0.5 rounded-md
+           bg-teal-500/10 text-teal-600 dark:text-teal-400 border border-teal-500/20;
+  }
+
+  .input {
+    @apply w-full px-3 py-2.5 text-sm rounded-xl border border-[var(--border)]
+           bg-[var(--bg-secondary)] text-[var(--text)]
+           focus:outline-none focus:border-teal-500/60 focus:ring-2 focus:ring-teal-500/20
+           transition-all;
+    color: var(--text);
+  }
+  .input::placeholder {
+    color: var(--text-muted);
+    opacity: 0.5;
+  }
+}
+
+/* grid bg */
+.grid-bg {
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.4;
+}
