@@ -63,7 +63,7 @@ export default function Hero() {
               <a href="#contact" className="btn-outline">
                 Contact Me
               </a>
-              <a href={personal.RupeshKumarCV.pdf} download className="btn-outline">
+              <a href={personal.resumeUrl} download className="btn-outline">
                 <Download size={15} /> Resume
               </a>
             </motion.div>
@@ -104,7 +104,7 @@ export default function Hero() {
               {/* Avatar circle */}
               <div className="relative w-60 h-60 sm:w-72 sm:h-72 rounded-full overflow-hidden border-2 border-teal-500/30 shadow-2xl shadow-teal-500/10">
   
-              <img src="/Rk.jpg"
+              <img src="./Rk.jpg"
               className="w-full h-full object-cover"
               />
 
