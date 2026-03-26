@@ -81,7 +81,7 @@ export default function Experience() {
         >
           <p className="text-sm text-[var(--text-muted)]">
             Continuously learning and building skills in
-            <span className="text-teal-500 font-medium"> Cloud Computing, DevOps, and Full Stack Development</span>.
+            <span className="text-teal-500 font-medium"> Cloud Computing, DevOps, Data Structures & Algorithm</span>.
           </p>
         </motion.div>
 
