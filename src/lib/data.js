@@ -19,22 +19,22 @@ export const skillCategories = [
     label: 'Cloud & DevOps',
     icon: '☁️',
     skills: [
-      { name: 'AWS (EC2, S3, Lambda)', level: 80 },
-      { name: 'Docker', level: 65 },
-      { name: 'GitHub Actions', level: 80 },
-      { name: 'Vercel / Netlify', level: 68 },
-      { name: 'Azure(RG,Vm,SA)', level: 75 },
+      { name: 'AWS (EC2, S3, Lambda)' },
+      { name: 'Docker' },
+      { name: 'GitHub Actions' },
+      { name: 'Vercel / Netlify' },
+      { name: 'Azure(RG,Vm,SA)' },
     ],
   },
   {
     label: 'Tools & Others',
     icon: '🛠️',
     skills: [
-      { name: 'Git & GitHub', level: 90 },
-      { name: 'Linux / Bash', level: 80 },
-      { name: 'Maven', level: 68 },
-      { name: 'REST ', level: 75 },
-      { name: 'Docker & Docker Hub', level: 70 },
+      { name: 'Git & GitHub' },
+      { name: 'Linux / Bash' },
+      { name: 'Maven' },
+      { name: 'REST ' },
+      { name: 'Docker & Docker Hub' },
     ],
   },
 ]
@@ -106,9 +106,19 @@ export const timeline = [
   },
   {
     type: 'education',
-    title: 'Class XII — CBSE',
+    title: 'Class X — CBSE',
     org: 'BP DAV Public School',
     location: 'Garhwa Jharkhand, India',
+    period: '2019 – 2020',
+    desc: 'Completed secondary education under CBSE curriculum with strong academic performance',
+    tags: ['89%', 'Science, Mathematics, English, Social Studies,Hindi, Sanskrit'],
+    icon: '🏫',
+  },
+  {
+    type: 'education',
+    title: 'Class XII — CBSE',
+    org: 'Kemdriya Vidyalaya',
+    location: 'Latehar Jharkhand, India',
     period: '2021 – 2022',
     desc: 'Scored 74% in PCM + Computer Science. Good in Computer Science subject.',
     tags: ['74%', 'PCM + CS'],
@@ -123,6 +133,7 @@ export const achievements = [
     date: 'July 2025',
     emoji: '📜',
     gradient: 'from-orange-400 to-yellow-400',
+    link: '/certificates/dsa.pdf'
   },
   {
     title: 'Privacy And Security In Online Social Media ',
@@ -130,6 +141,7 @@ export const achievements = [
     date: 'Jan 2025',
     emoji: '📜',
     gradient: 'from-blue-400 to-cyan-400',
+    link: '/certificates/media.pdf'
   },
   {
     title: 'ChatGPT-4 Prompt Engineering: ChatGPT, Generative AI & LLM ',
@@ -137,6 +149,7 @@ export const achievements = [
     date: 'September 2025',
     emoji: '📜',
     gradient: 'from-teal-400 to-emerald-400',
+    link: '/certificates/gpt.pdf'
   },
   {
     title: 'Build Generative AI Apps & Solution With No-Code Tools ',
@@ -144,6 +157,7 @@ export const achievements = [
     date: 'September 2025',
     emoji: '📜',
     gradient: 'from-green-400 to-teal-400',
+    link: '/certificates/genai.pdf'
   },
   {
     title: 'Object- Oriented Programming',
@@ -151,6 +165,7 @@ export const achievements = [
     date: 'December 2024',
     emoji: '📜',
     gradient: 'from-yellow-400 to-orange-400',
+    link: '/certificates/oops.pdf'
   },
   {
     title: 'Java Programming ',
@@ -158,6 +173,7 @@ export const achievements = [
     date: 'May 2025',
     emoji: '📜',
     gradient: 'from-slate-400 to-teal-400',
+        link: '/certificates/java.pdf'
   },
 ]
 
