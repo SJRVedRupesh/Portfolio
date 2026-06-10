@@ -31,18 +31,18 @@ export default function App() {
   }, [])
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-slate-900 via-black to-slate-900">
+    <div className="min-h-screen relative overflow-hidden bg-slate-950 text-slate-100">
 
       {/* 🔥 Scroll Progress Bar */}
       <div
-        className="fixed top-0 left-0 h-1 bg-teal-500 z-50 transition-all duration-200"
+        className="fixed top-0 left-0 h-1 bg-teal-400 z-50 transition-all duration-200"
         style={{ width: `${scroll}%` }}
       />
 
-      {/* 💎 Background Effects */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-teal-500/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-10 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl"></div>
-      <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+      {/* Subtle background glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(34,197,94,0.14),transparent_20%),radial-gradient(circle_at_bottom_right,_rgba(56,189,248,0.08),transparent_18%)] pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-slate-950 via-slate-950/75 to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent pointer-events-none" />
 
       {/* 🌐 Content */}
       <div className="relative z-10">

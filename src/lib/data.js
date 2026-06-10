@@ -19,22 +19,22 @@ export const skillCategories = [
     label: 'Cloud & DevOps',
     icon: '☁️',
     skills: [
-      { name: 'AWS (EC2, S3, Lambda)' },
-      { name: 'Docker' },
-      { name: 'GitHub Actions' },
-      { name: 'Vercel / Netlify' },
-      { name: 'Azure(RG,Vm,SA)' },
+      { name: 'AWS (EC2, S3, Lambda, CloudFront, Auto Scaling)', level: 88 },
+      { name: 'Docker', level: 70 },
+      { name: 'GitHub Actions', level: 78 },
+      { name: 'Vercel / Netlify', level: 65 },
+      { name: 'Azure (VM, Storage, RG)', level: 72 },
     ],
   },
   {
     label: 'Tools & Others',
     icon: '🛠️',
     skills: [
-      { name: 'Git & GitHub' },
-      { name: 'Linux / Bash' },
-      { name: 'Maven' },
-      { name: 'REST ' },
-      { name: 'Docker & Docker Hub' },
+      { name: 'Git & GitHub', level: 92 },
+      { name: 'Linux', level: 84 },
+      { name: 'Maven', level: 70 },
+      { name: 'Jenkins', level: 76 },
+      { name: 'CI/CD Concepts', level: 76 },
     ],
   },
 ]
@@ -51,13 +51,12 @@ export const projects = [
     featured: true,
   },
   {
-    title: 'Glam-Guru',
-    description: 'Glam-Guru is a personalized makeup assistant web app that helps users discover suitable products, learn techniques through tutorials, and get customized beauty advice.',
+    title: 'Devops Pulse',
+    description: 'Devops Pulse is a comprehensive platform for managing and optimizing DevOps workflows, providing insights and automation capabilities for modern software development.',
     emoji: '🛍️',
     gradient: 'from-orange-500 to-pink-500',
-    tags: ['Next.js', 'FastAPI', 'PostgreSQL', 'Redis', 'Stripe'],
-    liveUrl: 'https://glamour-jet.vercel.app/',
-    githubUrl: 'https://github.com/SJRVedRupesh/Glamour',
+    tags: ['Next.js', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker', 'AWS', 'Jenkins'],
+    githubUrl: 'https://github.com/SJRVedRupesh/DevopsPulse',
     featured: true,
   },
   {
@@ -70,6 +69,27 @@ export const projects = [
     githubUrl: 'https://github.com/SJRVedRupesh/FairyKids',
     featured: false,
   },
+  {
+    title: 'Glam-Guru',
+    description: 'Glam-Guru is a personalized makeup assistant web app that helps users discover suitable products, learn techniques through tutorials, and get customized beauty advice.',
+    emoji: '📋',
+    gradient: 'from-violet-500 to-teal-500',
+    tags: ['CSS', 'JavaScript', 'Gemini API', 'HTML'],
+    liveUrl: 'https://github.com/SJRVedRupesh/Glamour',
+    githubUrl: 'https://github.com/SJRVedRupesh/Glamour',
+    featured: false,
+  },
+  {
+    title: 'Cloud Blog Web',
+    description: 'A simple blog website built with React and Node.js, focused on cloud computing topics.',
+    emoji: '📋',
+    gradient: 'from-violet-500 to-teal-500',
+    tags: ['React', 'Express', 'JavaScript', 'AWS Services'],
+    liveUrl: 'https://github.com/SJRVedRupesh/CloudBlogWeb',
+    githubUrl: 'https://github.com/SJRVedRupesh/CloudBlogWeb',
+    featured: false,
+  },
+
   
 ]
 
@@ -111,7 +131,7 @@ export const timeline = [
     location: 'Garhwa Jharkhand, India',
     period: '2019 – 2020',
     desc: 'Completed secondary education under CBSE curriculum with strong academic performance',
-    tags: ['89%', 'Science, Mathematics, English, Social Studies,Hindi, Sanskrit'],
+    tags: ['86.16%', 'Science, Mathematics, English, Social Studies,Hindi, Sanskrit'],
     icon: '🏫',
   },
   {
@@ -120,8 +140,8 @@ export const timeline = [
     org: 'Kemdriya Vidyalaya',
     location: 'Latehar Jharkhand, India',
     period: '2021 – 2022',
-    desc: 'Scored 74% in PCM + Computer Science. Good in Computer Science subject.',
-    tags: ['74%', 'PCM + CS'],
+    desc: 'Scored 72.83% in PCM + Computer Science. Good in Computer Science subject.',
+    tags: ['72.83%', 'PCM + CS'],
     icon: '🏫',
   },
 ]

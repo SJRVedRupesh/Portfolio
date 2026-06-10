@@ -72,7 +72,6 @@ export default function Contact() {
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} className="text-center mb-14"
         >
-          <span className="section-label">// contact</span>
           <h2 className="section-title">Get In Touch</h2>
           <p className="mt-3 text-[var(--text-muted)] max-w-md mx-auto text-sm">
             Have a project in mind or just want to say hi? My inbox is always open.

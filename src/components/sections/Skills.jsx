@@ -2,15 +2,19 @@ import { motion } from 'framer-motion'
 import { skillCategories } from '@/lib/data'
 
 function SkillBar({ name, level, delay }) {
+  const strength = level >= 85 ? 'Advanced' : level >= 70 ? 'Proficient' : level >= 55 ? 'Competent' : 'Familiar'
+
   return (
-    <div className="mb-3.5">
-      <div className="flex justify-between items-center mb-1.5">
+    <div className="mb-4">
+      <div className="flex justify-between items-center mb-2">
         <span className="text-sm font-medium">{name}</span>
-        <span className="text-xs font-mono text-teal-500 font-semibold">{level}%</span>
+        <span className="text-xs uppercase tracking-[0.24em] text-teal-400 font-semibold">
+          {strength}
+        </span>
       </div>
-      <div className="h-1.5 bg-[var(--border)] rounded-full overflow-hidden">
+      <div className="h-2.5 rounded-full bg-slate-800 overflow-hidden">
         <motion.div
-          className="h-full bg-gradient-to-r from-teal-500 to-teal-400 rounded-full"
+          className="h-full bg-gradient-to-r from-teal-400 to-cyan-400 rounded-full"
           initial={{ width: 0 }}
           whileInView={{ width: `${level}%` }}
           viewport={{ once: true }}
@@ -31,7 +35,6 @@ export default function Skills() {
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} className="text-center mb-14"
         >
-          <span className="section-label">// skills</span>
           <h2 className="section-title">What I Work With</h2>
           <p className="mt-3 text-[var(--text-muted)] max-w-md mx-auto text-sm">
             Technologies and tools I use to bring ideas to life.
@@ -71,7 +74,7 @@ export default function Skills() {
         >
           <p className="text-xs text-[var(--text-muted)] mb-4 uppercase tracking-wider font-medium">Also familiar with</p>
           <div className="flex flex-wrap justify-center gap-2">
-            {['Docker','Git', 'Linux', 'Bash', 'Figma', 'VS Code'].map(t => (
+            {['Docker','Git', 'Linux', 'Jenkins', 'VS Code'].map(t => (
               <span key={t} className="tag">{t}</span>
             ))}
           </div>

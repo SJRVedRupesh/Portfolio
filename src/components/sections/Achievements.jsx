@@ -22,7 +22,6 @@ export default function Achievements() {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <span className="section-label">// achievements</span>
           <h2 className="section-title">Awards &amp; Certifications</h2>
           <p className="mt-3 text-[var(--text-muted)] max-w-md mx-auto text-sm">
             Milestones, recognitions, and credentials I&apos;ve earned along the way.

@@ -15,7 +15,6 @@ export default function Experience() {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <span className="section-label">// journey</span>
           <h2 className="section-title">Education Journey</h2>
           <p className="mt-3 text-[var(--text-muted)] max-w-md mx-auto text-sm">
             My academic background and learning path that shaped my skills.

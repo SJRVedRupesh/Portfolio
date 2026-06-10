@@ -14,7 +14,6 @@ export default function Projects() {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <span className="section-label">// projects</span>
           <h2 className="section-title">Things I&apos;ve Built</h2>
           <p className="mt-3 text-[var(--text-muted)] max-w-md mx-auto text-sm">
             A selection of personal and internship projects I&apos;m proud of.
